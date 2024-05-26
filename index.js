@@ -30,9 +30,7 @@ function CheckPassword(passwordLength) {
 function ValidateForm(){
     event.preventDefault();
     let email = document.getElementById("form_email").value;
-    document.getElementById("form_email").value="";
     let password = document.getElementById("form_password").value;
-    document.getElementById("form_password").value="";
     let passwordLength = password.length;
     let emailLength = email.length;
     let flagg = 0;
@@ -45,11 +43,15 @@ function ValidateForm(){
                     console.log(flagg);
                 }else{
                     document.getElementById("warning1").style.display="block";
+                    document.getElementById("form_email").value="";
+                    document.getElementById("form_password").value="";
                     console.log("email failed rigs");
                     flagg = 1;
                 }
         }else {
             document.getElementById("warning1").style.display="block";
+            document.getElementById("form_email").value="";
+            document.getElementById("form_password").value="";
             console.log("email failed length");
             flagg = 1;
         }
@@ -60,6 +62,7 @@ function ValidateForm(){
             console.log(flagg);
         }else{
             document.getElementById("warning2").style.display="block";
+            document.getElementById("form_password").value="";
             console.log("password failed");
             flagg = 1;
         }
@@ -69,6 +72,8 @@ function ValidateForm(){
             document.getElementById("okay").style.display="block";
             document.getElementById("warning1").style.display="none";
             document.getElementById("warning2").style.display="none";
+            document.getElementById("form_email").value="";
+            document.getElementById("form_password").value="";
         }
 }
 
