@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main_body{
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#signup_div{
+    text-align:start;
+}
+label{
+    font-size: 20px;
+}
+.inputt {
+    padding: 10px;
+    margin-top: 10px;
+    width: 500px;
+    border-radius: 7px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+.inputt::placeholder { 
+    font-size: 17px;
+  }
+.red_p{
+    color:red;
+    font-size: 18px;
+    font-weight: 400;
+}
+.green_p{
+    color:green;
+    font-size: 18px;
+    font-weight: 400;
+}
+#warning1{
+    display: none;
+    padding-bottom: 20px;
+}
+#warning2{
+    display: none;
+    padding-bottom: 20px;
+}
+#okay{
+    display: none;
+}
+.submitt {
+    font-size: 17px;
+    padding:5px;
+    font-weight: 400;
+    width:27%;
+    border-radius: 5px;
+    border: 2px solid black;
+}
