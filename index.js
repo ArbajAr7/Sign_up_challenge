@@ -30,7 +30,9 @@ function CheckPassword(passwordLength) {
 function ValidateForm(){
     event.preventDefault();
     let email = document.getElementById("form_email").value;
+    document.getElementById("form_email").value="";
     let password = document.getElementById("form_password").value;
+    document.getElementById("form_password").value="";
     let passwordLength = password.length;
     let emailLength = email.length;
     let flagg = 0;
